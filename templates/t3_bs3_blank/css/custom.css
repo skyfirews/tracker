@@ -1,0 +1,33 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27 Apr, 2018, 6:41:37 PM
+    Author     : msrinivas
+*/
+
+.row.LoginDiv {
+    padding-top: 50px;
+}
+.loginButton{
+       margin-top: 30px;
+        margin-bottom: 15px;
+}
+.row.LoginDiv  .input-prepend,.row.LoginDiv .checkbox{
+     margin-top: 20px;
+}
+#fungicideList ul {
+    padding-left: 10px;
+}
+.daycount {
+    color: #18547E;
+    font-size: 20px;
+    padding: 0px;
+    font-family: cursive;
+    margin: 0px;
+}
+.mb10{
+    margin-bottom: 10px !important;
+}

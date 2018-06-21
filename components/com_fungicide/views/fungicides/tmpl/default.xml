@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_FUNGICIDE_TITLE_LIST_VIEW_FUNGICIDES" option="View">
+        <message>
+                        <![CDATA[COM_FUNGICIDE_TITLE_LIST_VIEW_FUNGICIDES_DESC]]>
+        </message>
+	</layout>
+</metadata>

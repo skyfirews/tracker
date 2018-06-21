@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    <field name="id" type="text" readonly="true" class="readonly" default="0" description="JGLOBAL_FIELD_ID_DESC"/>
+    <field name="ordering"/>
+    <field name="state" default="1" type="list" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="inputbox" size="1">
+      <option value="1">JPUBLISHED</option>
+      <option value="0">JUNPUBLISHED</option>
+      <option value="2">JARCHIVED</option>
+      <option value="-2">JTRASHED</option>
+    </field>
+    <field name="checked_out" type="hidden" filter="unset"/>
+    <field name="checked_out_time" default="0000-00-00 00:00:00" type="hidden" filter="unset"/>
+    <field name="created_by" type="createdby" default="0" label="COM_FUNGICIDE_FORM_LBL_FUNGICIDE_CREATED_BY" description="COM_FUNGICIDE_FORM_DESC_FUNGICIDE_CREATED_BY" hidden="true" hint="COM_FUNGICIDE_FORM_LBL_FUNGICIDE_CREATED_BY"/>
+    <field name="modified_by" type="modifiedby" default="0" label="COM_FUNGICIDE_FORM_LBL_FUNGICIDE_MODIFIED_BY" description="COM_FUNGICIDE_FORM_DESC_FUNGICIDE_MODIFIED_BY" hidden="true" hint="COM_FUNGICIDE_FORM_LBL_FUNGICIDE_MODIFIED_BY"/>
+    <field name="cid" type="foreignkey" label="COM_FUNGICIDE_FORM_LBL_FUNGICIDE_CID" description="COM_FUNGICIDE_FORM_DESC_FUNGICIDE_CID" class="inputbox" input_type="list" table="#__cropdetail" key_field="id" value_field="id" default="0"/>
+    <field name="dateofspray" class="inputbox" timeformat="12" filter="server_utc" showtime="false" singleheader="false" todaybutton="false" weeknumbers="false" filltable="false" type="calendar" label="COM_FUNGICIDE_FORM_LBL_FUNGICIDE_DATEOFSPRAY" description="COM_FUNGICIDE_FORM_DESC_FUNGICIDE_DATEOFSPRAY" hint="COM_FUNGICIDE_FORM_LBL_FUNGICIDE_DATEOFSPRAY"/>
+    <field name="ratiodescribe" editor="|" buttons="false" filter="JComponentHelper::filterText" type="editor" label="COM_FUNGICIDE_FORM_LBL_FUNGICIDE_RATIODESCRIBE" description="COM_FUNGICIDE_FORM_DESC_FUNGICIDE_RATIODESCRIBE" hint="COM_FUNGICIDE_FORM_LBL_FUNGICIDE_RATIODESCRIBE"/>
+    <field name="spraydayaftercutting" label="COM_FUNGICIDE_FORM_LBL_FUNGICIDE_SPRAYDAYAFTERCUTTING" description="COM_FUNGICIDE_FORM_DESC_FUNGICIDE_SPRAYDAYAFTERCUTTING" hint="COM_FUNGICIDE_FORM_LBL_FUNGICIDE_SPRAYDAYAFTERCUTTING"/>
+    <field name="diffrencedate" filter="safehtml" type="text" label="COM_FUNGICIDE_FORM_LBL_FUNGICIDE_DIFFRENCEDATE" description="COM_FUNGICIDE_FORM_DESC_FUNGICIDE_DIFFRENCEDATE" hint="COM_FUNGICIDE_FORM_LBL_FUNGICIDE_DIFFRENCEDATE"/>
+    <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL" description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
+  </fieldset>
+</form>

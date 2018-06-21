@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+
+        <field name="cid" type="sql" label="COM_CROPBALANCESHEET_FORM_LBL_BALANCE_CID" query="SELECT '' AS `id`, 'COM_CROPBALANCESHEET_BALANCES_CID_FILTER' AS `val` UNION SELECT `id` AS `id`, `id` AS val FROM `#__cropdetail`" key_field="id" value_field="val" class="inputbox" onchange="this.form.submit()" translate="true"/>
+<field name="expencetype" type="sql" label="COM_CROPBALANCESHEET_FORM_LBL_BALANCE_EXPENCETYPE" query="SELECT '' AS `id`, 'COM_CROPBALANCESHEET_BALANCES_EXPENCETYPE_FILTER' AS `val` UNION SELECT `id` AS `id`, `name` AS val FROM `#__expencetype`" key_field="id" value_field="val" class="inputbox" onchange="this.form.submit()" translate="true"/>
+
+
+    </fields>
+</form>
