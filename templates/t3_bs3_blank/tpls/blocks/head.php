@@ -49,6 +49,10 @@ $this->addHead();
 if (is_file(T3_TEMPLATE_PATH . '/css/custom.css')) {
 	$this->addStyleSheet(T3_TEMPLATE_URL . '/css/custom.css');
 }
+if (is_file(T3_TEMPLATE_PATH . '/js/custom.js')) {
+    $this->addScript(T3_TEMPLATE_URL . '/js/custom.js');
+	//$this->addStyleSheet(T3_TEMPLATE_URL . '/js/custom.js');
+}
 ?>
 
 <!-- Le HTML5 shim and media query for IE8 support -->

@@ -10,3 +10,6 @@
  * @Link:         http://t3-framework.org 
  *------------------------------------------------------------------------------
  */
+$( document ).ready(function() {
+    console.log( "ready!" );
+});
