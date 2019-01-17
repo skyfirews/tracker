@@ -15,7 +15,7 @@ class JConfig {
 	public $host = 'localhost';
 	public $user = 'root';
 	public $password = '';
-	public $db = 'tracker';
+	public $db = 'id6257739_tracker';
 	public $dbprefix = 'grp_';
 	public $live_site = '';
 	public $secret = 'QeLidR1MMDQYJmdW';

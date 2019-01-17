@@ -3,7 +3,7 @@
  * @package     Joomla.Administrator
  * @subpackage  com_media
  *
- * @copyright   Copyright (C) 2005 - 2018 Open Source Matters, Inc. All rights reserved.
+ * @copyright   Copyright (C) 2005 - 2019 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
@@ -29,7 +29,7 @@ $dispatcher = JEventDispatcher::getInstance();
 		<?php endif; ?>
 
 		<div class="height-50">
-			<a class="img-preview" href="<?php echo COM_MEDIA_BASEURL, '/', rawurlencode($img->path_relative); ?>" title="<?php echo $this->escape($img->name); ?>" >
+			<a class="img-preview" href="<?php echo COM_MEDIA_BASEURL . '/' . str_replace('%2F', '/', rawurlencode($img->path_relative)); ?>" title="<?php echo $this->escape($img->name); ?>" >
 				<?php echo JHtml::_('image', COM_MEDIA_BASEURL . '/' . $this->escape($img->path_relative), JText::sprintf('COM_MEDIA_IMAGE_TITLE', $this->escape($img->title), JHtml::_('number.bytes', $img->size)), array('width' => $img->width_60, 'height' => $img->height_60)); ?>
 			</a>
 		</div>
