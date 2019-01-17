@@ -14,8 +14,8 @@
     <field name="cid" type="foreignkey" label="COM_FUNGICIDE_FORM_LBL_FUNGICIDE_CID" description="COM_FUNGICIDE_FORM_DESC_FUNGICIDE_CID" class="inputbox" input_type="list" table="#__cropdetail" key_field="id" value_field="id" default="0"/>
     <field name="dateofspray" class="inputbox" timeformat="12" filter="server_utc" showtime="false" singleheader="false" todaybutton="false" weeknumbers="false" filltable="false" type="calendar" label="COM_FUNGICIDE_FORM_LBL_FUNGICIDE_DATEOFSPRAY" description="COM_FUNGICIDE_FORM_DESC_FUNGICIDE_DATEOFSPRAY" hint="COM_FUNGICIDE_FORM_LBL_FUNGICIDE_DATEOFSPRAY"/>
     <field name="ratiodescribe" editor="|" buttons="false" filter="JComponentHelper::filterText" type="editor" label="COM_FUNGICIDE_FORM_LBL_FUNGICIDE_RATIODESCRIBE" description="COM_FUNGICIDE_FORM_DESC_FUNGICIDE_RATIODESCRIBE" hint="COM_FUNGICIDE_FORM_LBL_FUNGICIDE_RATIODESCRIBE"/>
-    <field name="spraydayaftercutting" label="COM_FUNGICIDE_FORM_LBL_FUNGICIDE_SPRAYDAYAFTERCUTTING" description="COM_FUNGICIDE_FORM_DESC_FUNGICIDE_SPRAYDAYAFTERCUTTING" hint="COM_FUNGICIDE_FORM_LBL_FUNGICIDE_SPRAYDAYAFTERCUTTING"/>
-    <field name="diffrencedate" filter="safehtml" type="text" label="COM_FUNGICIDE_FORM_LBL_FUNGICIDE_DIFFRENCEDATE" description="COM_FUNGICIDE_FORM_DESC_FUNGICIDE_DIFFRENCEDATE" hint="COM_FUNGICIDE_FORM_LBL_FUNGICIDE_DIFFRENCEDATE"/>
+   
+    <field name="diffrencedate" filter="safehtml" type="hidden" label="COM_FUNGICIDE_FORM_LBL_FUNGICIDE_DIFFRENCEDATE" description="COM_FUNGICIDE_FORM_DESC_FUNGICIDE_DIFFRENCEDATE" hint="COM_FUNGICIDE_FORM_LBL_FUNGICIDE_DIFFRENCEDATE"/>
     <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL" description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
   </fieldset>
 </form>

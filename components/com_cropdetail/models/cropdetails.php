@@ -145,8 +145,9 @@ class CropdetailModelCropdetails extends JModelList
 		if ($orderCol && $orderDirn)
 		{
 			$query->order($db->escape($orderCol . ' ' . $orderDirn));
-		}
-
+		}else{
+                    $query->order($db->escape('a.id   DESC '));
+                }
 		return $query;
 	}
 
