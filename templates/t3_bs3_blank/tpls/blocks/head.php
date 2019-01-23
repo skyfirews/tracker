@@ -11,7 +11,8 @@ defined('_JEXEC') or die;
 <!-- META FOR IOS & HANDHELD -->
 <?php if ($this->getParam('responsive', 1)): ?>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-	<style type="text/stylesheet">
+	<link rel="apple-touch-icon" sizes="128x128" href="images/T.png">
+        <style type="text/stylesheet">
 		@-webkit-viewport   { width: device-width; }
 		@-moz-viewport      { width: device-width; }
 		@-ms-viewport       { width: device-width; }
